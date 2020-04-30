@@ -11,6 +11,7 @@
 			background:linear-gradient(to right, #026670 0%, #9FEDD7 20%, #FEF9C7 40%, #FCE181 60%, #EDEAE5 80%);
 			color:black;
 		}
+		
 	div{	
 			display: flex;
 			justify-content:center;
@@ -19,14 +20,14 @@
 			border-radius: 20px;
 			padding:30px;
 			margin:50px;
-	}
+		}
 </style>
-<title>Employee added</title>
+<title>Employee</title>
 </head>
 <body>
 	<div>
-		<h3>Employee added with name ${employee.getUsername()}</h3>
+		${emp}
 	</div>
 	
-</body>
+</body>	
 </html>

@@ -19,13 +19,14 @@
 			border-radius: 20px;
 			padding:30px;
 			margin:50px;
+			
 	}
 </style>
-<title>Employee added</title>
+<title>Employees</title>
 </head>
 <body>
 	<div>
-		<h3>Employee added with name ${employee.getUsername()}</h3>
+		${employees}
 	</div>
 	
 </body>

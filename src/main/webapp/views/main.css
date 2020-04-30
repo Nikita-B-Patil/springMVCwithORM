@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+body{
+			padding:0px;
+			margin:0px;
+			background:linear-gradient(to right, #026670 0%, #9FEDD7 20%, #FEF9C7 40%, #FCE181 60%, #EDEAE5 80%);
+			color:black;
+		}
+		
+		h1{
+			padding:10px;
+			margin:10px;
+			text-align:center;
+			text-shadow: 1px 1px gray;
+			
+		}
+		
+		div{	
+			display: flex;
+			justify-content:center;
+			align-items:center;
+		}
+		
+		.column{
+			float: left;
+			width: 32.33%;
+			padding: 10px;
+			margin:20px;
+			heigth: 250px;
+			border: 1px solid pink;
+			border-radius: 20px;	
+		}
+		.row:after{
+			clear:both;
+			content:" ";
+			display:block;
+			visibility:none;
+		}
