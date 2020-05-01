@@ -8,11 +8,13 @@
 	body{
 			padding:0px;
 			margin:0px;
-			background:linear-gradient(to right, #026670 0%, #9FEDD7 20%, #FEF9C7 40%, #FCE181 60%, #EDEAE5 80%);
+			background:linear-gradient(to right, #026670 20%, #9FEDD7 40%, #FEF9C7 60%, #EDEAE5 60%, #FCE181 80%););
 			color:black;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 		}
 	div{	
 			display: flex;
+			flex-direction: column;
 			justify-content:center;
 			align-items:center;
 			border: 2px solid black;
@@ -20,12 +22,52 @@
 			padding:30px;
 			margin:50px;
 	}
+	
+	table{
+		border-collapse:collapse;
+		border-radius: 6px 6px 6px 6px;
+	    -moz-border-radius: 6px 6px 6px 6px;
+	    -webkit-border-radius: 6px 6px 6px 6px;
+	    box-shadow: 0 1px 1px #CCCCCC;
+		padding:10px;
+		margin:10px;
+		width:40%;		
+	}
+	th,td{
+		text-align:left;
+		padding:10px;
+	}
+	th{
+		background-color:#212F3D;
+		color: #ECF0F1 ;
+	}
+	td:nth-child(1){
+		width:30%;
+	}
+	td:nth-child(2){
+		width:70%;
+	}
+	tr{
+		background-color: #B3B6B7;
+	}
 </style>
 <title>Employee added</title>
 </head>
 <body>
+		
 	<div>
 		<h3>Employee added with name ${employee.getUsername()}</h3>
+		<br><br>
+		<table>
+			<tr>
+				<th>Username</th>
+				<th>Email</th>
+			</tr>			
+			<tr>
+				<td>${employee.getUsername()}</td>
+				<td>${employee.getEmail()}</td>
+			</tr>
+		</table>
 	</div>
 	
 </body>

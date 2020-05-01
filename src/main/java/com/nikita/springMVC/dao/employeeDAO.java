@@ -39,4 +39,14 @@ public class employeeDAO {
 		Session session = sessionFactory.getCurrentSession();
 		session.save(emp);
 	}
+	
+	@Transactional
+	public void delEmployee(String username) {
+		Session session = sessionFactory.getCurrentSession();
+		Employee emp = session.byId(Employee.class).load(username);
+		session.delete(emp);
+	}
+	
+	
+	
 }
