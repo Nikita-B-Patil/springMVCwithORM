@@ -1,1 +1,1 @@
-Spring MVC simple project
+Spring MVC project using ORM for CRUD operations
